@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Diya Mania | Portfolio</title>
+    <title>Diya Mania | Finance Portfolio</title>
 
     <style>
-
         * {
             box-sizing: border-box;
             scroll-behavior: smooth;
@@ -22,8 +21,6 @@
             line-height: 1.6;
         }
 
-        /* Navigation */
-
         nav {
             background-color: white;
             padding: 18px;
@@ -31,26 +28,25 @@
             border-bottom: 1px solid #ddd;
             position: sticky;
             top: 0;
+            z-index: 1000;
         }
 
         nav a {
             color: #222;
             text-decoration: none;
             font-weight: bold;
-            margin: 0 20px;
+            margin: 0 15px;
         }
 
         nav a:hover {
             text-decoration: underline;
         }
 
-        /* Header */
-
         header {
             background-color: #222;
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 85px 20px;
         }
 
         header h1 {
@@ -61,16 +57,14 @@
         header h2 {
             font-size: 21px;
             font-weight: normal;
-            margin: 0 0 30px;
+            margin: 0 0 25px;
         }
 
         .statement {
-            max-width: 750px;
+            max-width: 760px;
             margin: auto;
             font-size: 18px;
         }
-
-        /* Main Sections */
 
         section {
             max-width: 1000px;
@@ -83,8 +77,6 @@
             margin-bottom: 25px;
         }
 
-        /* Skills */
-
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -96,14 +88,30 @@
             padding: 12px 18px;
             border: 1px solid #ddd;
             border-radius: 8px;
-            font-weight: 500;
         }
 
-        /* Projects */
+        .card {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .card h4 {
+            margin-top: 0;
+            color: #666;
+            font-weight: normal;
+        }
 
         .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
             gap: 20px;
         }
 
@@ -116,14 +124,29 @@
 
         .project h3 {
             margin-top: 0;
-            font-size: 21px;
         }
 
-        .project p {
-            color: #555;
+        .project-subtitle {
+            font-weight: bold;
+            color: #666;
         }
 
-        /* Footer */
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .certificate {
+            background-color: white;
+            padding: 25px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .certificate h3 {
+            margin-top: 0;
+        }
 
         footer {
             background-color: #222;
@@ -137,6 +160,16 @@
             margin: 0;
         }
 
+        @media (max-width: 650px) {
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            header h1 {
+                font-size: 38px;
+            }
+        }
     </style>
 </head>
 
@@ -148,11 +181,13 @@
     <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
     </nav>
 
 
-    <!-- Personal Statement -->
+    <!-- About -->
 
     <header id="about">
 
@@ -161,7 +196,9 @@
         <h2>Finance Student | Rutgers Business School</h2>
 
         <p class="statement">
-            I am a Finance student at Rutgers Business School interested in using financial analysis, data, and problem-solving to support informed business decisions.
+            Finance student at Rutgers Business School with experience in
+            financial analysis and market research and a growing interest
+            in corporate finance and risk analysis.
         </p>
 
     </header>
@@ -176,20 +213,41 @@
         <div class="skills">
 
             <div class="skill">Financial Analysis</div>
-
+            <div class="skill">Corporate Finance</div>
+            <div class="skill">Financial Accounting</div>
+            <div class="skill">Market Research</div>
+            <div class="skill">Risk Assessment</div>
             <div class="skill">Microsoft Excel</div>
-
             <div class="skill">SQL</div>
-
             <div class="skill">Data Analysis</div>
-
             <div class="skill">Problem Solving</div>
-
             <div class="skill">Communication</div>
-
             <div class="skill">Teamwork</div>
 
-            <div class="skill">Customer Service</div>
+        </div>
+
+    </section>
+
+
+    <!-- Experience -->
+
+    <section id="experience">
+
+        <h2>Experience</h2>
+
+        <div class="card">
+
+            <h3>Research Analyst Intern</h3>
+
+            <h4>VVD Diamonds</h4>
+
+            <p>
+                Analyzed financial data to support strategic business decisions
+                and operational improvements. Monitored budgets and conducted
+                market research to support profitability, while collaborating
+                with management on workflow improvements and business development
+                initiatives.
+            </p>
 
         </div>
 
@@ -209,10 +267,17 @@
 
             <div class="project">
 
-                <h3>Financial Analysis</h3>
+                <h3>Internal Audit Job Simulation</h3>
+
+                <p class="project-subtitle">
+                    Goldman Sachs | Forage
+                </p>
 
                 <p>
-                    Applied financial statement analysis and financial concepts to evaluate business performance and support financial decision-making.
+                    Completed practical tasks focused on the foundations of
+                    internal audit and risk assessment within Global Banking
+                    & Markets, developing experience in evaluating business
+                    risks and applying internal audit concepts.
                 </p>
 
             </div>
@@ -222,10 +287,18 @@
 
             <div class="project">
 
-                <h3>Business Operations Analytics</h3>
+                <h3>Stock Market & Technical Analysis</h3>
+
+                <p class="project-subtitle">
+                    Just Money Care
+                </p>
 
                 <p>
-                    Applied quantitative models, including break-even analysis and linear programming, to analyze business operations and decision-making problems.
+                    Completed a three-month stock market course focused on
+                    analyzing stocks and market behavior. Applied concepts
+                    including candlestick patterns, uptrends and downtrends,
+                    and economic indicators such as the Consumer Price Index
+                    (CPI) to interpret market conditions.
                 </p>
 
             </div>
@@ -235,10 +308,70 @@
 
             <div class="project">
 
-                <h3>Database & SQL</h3>
+                <h3>Database & SQL Analysis</h3>
+
+                <p class="project-subtitle">
+                    Rutgers Business School
+                </p>
 
                 <p>
-                    Used relational database concepts and SQL queries to retrieve, organize, and analyze business data.
+                    Applied relational database concepts and SQL queries to
+                    retrieve, organize, and analyze business data using
+                    MySQL and the Sakila sample database.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Certifications -->
+
+    <section id="certifications">
+
+        <h2>Certifications & Courses</h2>
+
+        <div class="certifications">
+
+
+            <!-- Certificate 1 -->
+
+            <div class="certificate">
+
+                <h3>Introduction to Corporate Finance</h3>
+
+                <p>
+                    <strong>University of Pennsylvania – Wharton | Coursera</strong>
+                </p>
+
+                <p>
+                    Completed foundational coursework in corporate finance
+                    covering time value of money, discounted cash flow,
+                    capital budgeting, risk and return, and valuation.
+                    Applied concepts including NPV, IRR, and CAPM to
+                    financial decision-making and investment analysis.
+                </p>
+
+            </div>
+
+
+            <!-- Certificate 2 -->
+
+            <div class="certificate">
+
+                <h3>Introduction to Financial Accounting</h3>
+
+                <p>
+                    <strong>University of Pennsylvania – Wharton | Coursera</strong>
+                </p>
+
+                <p>
+                    Completed coursework covering financial statements,
+                    cash flows, transaction recording, and ratio analysis,
+                    with applications to evaluating business performance.
                 </p>
 
             </div>
