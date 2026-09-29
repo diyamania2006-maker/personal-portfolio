@@ -41,7 +41,7 @@
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #555;
         }
 
         /* HEADER */
@@ -98,24 +98,27 @@
             border-radius: 8px;
         }
 
-        /* EXPERIENCE */
+        /* CARDS */
 
-        .experience-card {
+        .experience-card,
+        .project,
+        .certificate {
             background-color: white;
-            padding: 28px;
+            padding: 25px;
             border: 1px solid #ddd;
             border-radius: 10px;
         }
 
-        .experience-card h3 {
-            margin: 0 0 5px;
-            font-size: 22px;
+        .experience-card h3,
+        .project h3,
+        .certificate h3 {
+            margin-top: 0;
         }
 
-        .company {
-            margin-top: 0;
+        .company,
+        .project-source {
             font-weight: bold;
-            color: #555;
+            color: #666;
         }
 
         /* PROJECTS */
@@ -126,24 +129,6 @@
             gap: 20px;
         }
 
-        .project {
-            background-color: white;
-            padding: 25px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-        }
-
-        .project h3 {
-            margin-top: 0;
-            margin-bottom: 5px;
-        }
-
-        .project-source {
-            font-weight: bold;
-            color: #666;
-            margin-top: 0;
-        }
-
         /* CERTIFICATIONS */
 
         .certifications {
@@ -152,15 +137,21 @@
             gap: 20px;
         }
 
-        .certificate {
-            background-color: white;
-            padding: 25px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
+        /* BUTTONS */
+
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 16px;
+            background-color: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
         }
 
-        .certificate h3 {
-            margin-top: 0;
+        .button:hover {
+            background-color: #444;
         }
 
         /* FOOTER */
@@ -225,7 +216,9 @@
         <h2>Finance Student | Rutgers Business School</h2>
 
         <p class="statement">
-            Finance student at Rutgers Business School with experience in financial analysis and market research and a growing interest in corporate finance and risk analysis.
+            Finance student at Rutgers Business School with experience in
+            financial analysis and market research and a growing interest
+            in corporate finance and risk analysis.
         </p>
 
     </header>
@@ -247,6 +240,7 @@
             <div class="skill">Microsoft Excel</div>
             <div class="skill">SQL</div>
             <div class="skill">Data Analysis</div>
+            <div class="skill">Technical Analysis</div>
             <div class="skill">Problem Solving</div>
             <div class="skill">Communication</div>
             <div class="skill">Teamwork</div>
@@ -288,6 +282,7 @@
 
         <div class="projects">
 
+
             <!-- PROJECT 1 -->
 
             <div class="project">
@@ -304,6 +299,15 @@
                     experience applying internal audit and risk assessment concepts.
                 </p>
 
+                <a
+                    class="button"
+                    href="https://www.theforage.com/completion-certificates/MBA4MnZTNFEoJZGnk/dC4ChhAkhpgB7QvGd_MBA4MnZTNFEoJZGnk_68af7ba2cc98b1c3f8c930d3_1789080302764_completion_certificate.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Certificate
+                </a>
+
             </div>
 
 
@@ -311,17 +315,21 @@
 
             <div class="project">
 
-                <h3>Stock Market & Technical Analysis</h3>
+                <h3>Advanced Technical Analysis of Stocks</h3>
 
                 <p class="project-source">
-                    Just Money Care
+                    Just Money Care | 2-Month Advanced Level Training Program
                 </p>
 
                 <p>
-                    Completed a three-month stock market course involving stock
-                    analysis and market interpretation. Analyzed candlestick
-                    patterns, identified uptrends and downtrends, and studied
-                    economic indicators such as the Consumer Price Index (CPI).
+                    Completed a two-month advanced-level training program in
+                    technical analysis of stocks under the guidance of
+                    SEBI-registered Research Analyst Mr. Yagnesh Patel.
+                    Analyzed candlestick patterns, identified uptrends and
+                    downtrends, studied CIP, and used the Relative Strength
+                    Index (RSI) to evaluate market conditions. Practiced
+                    technical analysis using TradingView and began applying
+                    the concepts through personal investing.
                 </p>
 
             </div>
@@ -358,6 +366,7 @@
 
         <div class="certifications">
 
+
             <!-- CERTIFICATION 1 -->
 
             <div class="certificate">
@@ -371,11 +380,21 @@
                 </p>
 
                 <p>
-                    Completed coursework covering time value of money,
-                    discounted cash flow, cost of capital, risk and return,
-                    and financial decision-making, including concepts such
-                    as NPV, IRR, and CAPM.
+                    Completed foundational coursework in corporate finance
+                    covering time value of money, discounted cash flow,
+                    cost of capital, risk and return, and financial
+                    decision-making, including concepts such as NPV,
+                    IRR, and CAPM.
                 </p>
+
+                <a
+                    class="button"
+                    href="https://coursera.org/share/4e929e06e567849b36eb966f508aaa1f"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Certificate
+                </a>
 
             </div>
 
@@ -398,6 +417,15 @@
                     with applications to analyzing business performance.
                 </p>
 
+                <a
+                    class="button"
+                    href="https://coursera.org/share/91863bd2a8a6f3b5e29bc4b8933ad470"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Certificate
+                </a>
+
             </div>
 
         </div>
@@ -412,6 +440,7 @@
         <p>© 2026 Diya Mania | Rutgers Business School</p>
 
     </footer>
+
 
 </body>
 
