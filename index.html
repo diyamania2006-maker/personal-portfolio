@@ -21,9 +21,11 @@
             line-height: 1.6;
         }
 
+        /* NAVIGATION */
+
         nav {
             background-color: white;
-            padding: 18px;
+            padding: 18px 20px;
             text-align: center;
             border-bottom: 1px solid #ddd;
             position: sticky;
@@ -42,15 +44,17 @@
             text-decoration: underline;
         }
 
+        /* HEADER */
+
         header {
             background-color: #222;
             color: white;
             text-align: center;
-            padding: 85px 20px;
+            padding: 90px 20px;
         }
 
         header h1 {
-            font-size: 48px;
+            font-size: 50px;
             margin: 0 0 10px;
         }
 
@@ -61,14 +65,16 @@
         }
 
         .statement {
-            max-width: 760px;
+            max-width: 780px;
             margin: auto;
             font-size: 18px;
         }
 
+        /* GENERAL SECTIONS */
+
         section {
-            max-width: 1000px;
-            margin: 60px auto;
+            max-width: 1050px;
+            margin: 65px auto;
             padding: 0 25px;
         }
 
@@ -76,6 +82,8 @@
             font-size: 30px;
             margin-bottom: 25px;
         }
+
+        /* SKILLS */
 
         .skills {
             display: flex;
@@ -90,28 +98,31 @@
             border-radius: 8px;
         }
 
-        .card {
+        /* EXPERIENCE */
+
+        .experience-card {
             background-color: white;
-            padding: 25px;
-            margin-bottom: 20px;
+            padding: 28px;
             border: 1px solid #ddd;
             border-radius: 10px;
         }
 
-        .card h3 {
-            margin-top: 0;
-            margin-bottom: 5px;
+        .experience-card h3 {
+            margin: 0 0 5px;
+            font-size: 22px;
         }
 
-        .card h4 {
+        .company {
             margin-top: 0;
-            color: #666;
-            font-weight: normal;
+            font-weight: bold;
+            color: #555;
         }
+
+        /* PROJECTS */
 
         .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
         }
 
@@ -124,12 +135,16 @@
 
         .project h3 {
             margin-top: 0;
+            margin-bottom: 5px;
         }
 
-        .project-subtitle {
+        .project-source {
             font-weight: bold;
             color: #666;
+            margin-top: 0;
         }
+
+        /* CERTIFICATIONS */
 
         .certifications {
             display: grid;
@@ -148,6 +163,8 @@
             margin-top: 0;
         }
 
+        /* FOOTER */
+
         footer {
             background-color: #222;
             color: white;
@@ -160,23 +177,35 @@
             margin: 0;
         }
 
-        @media (max-width: 650px) {
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
             nav a {
                 display: inline-block;
-                margin: 5px 8px;
+                margin: 6px 8px;
+            }
+
+            header {
+                padding: 65px 20px;
             }
 
             header h1 {
                 font-size: 38px;
             }
+
+            header h2 {
+                font-size: 18px;
+            }
         }
+
     </style>
 </head>
 
 
 <body>
 
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
 
     <nav>
         <a href="#about">About</a>
@@ -187,7 +216,7 @@
     </nav>
 
 
-    <!-- About -->
+    <!-- ABOUT -->
 
     <header id="about">
 
@@ -196,15 +225,13 @@
         <h2>Finance Student | Rutgers Business School</h2>
 
         <p class="statement">
-            Finance student at Rutgers Business School with experience in
-            financial analysis and market research and a growing interest
-            in corporate finance and risk analysis.
+            Finance student at Rutgers Business School with experience in financial analysis and market research and a growing interest in corporate finance and risk analysis.
         </p>
 
     </header>
 
 
-    <!-- Skills -->
+    <!-- SKILLS -->
 
     <section id="skills">
 
@@ -229,24 +256,23 @@
     </section>
 
 
-    <!-- Experience -->
+    <!-- EXPERIENCE -->
 
     <section id="experience">
 
         <h2>Experience</h2>
 
-        <div class="card">
+        <div class="experience-card">
 
             <h3>Research Analyst Intern</h3>
 
-            <h4>VVD Diamonds</h4>
+            <p class="company">VVD Diamonds</p>
 
             <p>
                 Analyzed financial data to support strategic business decisions
-                and operational improvements. Monitored budgets and conducted
-                market research to support profitability, while collaborating
-                with management on workflow improvements and business development
-                initiatives.
+                and optimize operations. Monitored budgets and conducted market
+                research to support profitability. Collaborated with management
+                to streamline workflows and inform business development initiatives.
             </p>
 
         </div>
@@ -254,7 +280,7 @@
     </section>
 
 
-    <!-- Projects -->
+    <!-- PROJECTS -->
 
     <section id="projects">
 
@@ -262,73 +288,69 @@
 
         <div class="projects">
 
-
-            <!-- Project 1 -->
+            <!-- PROJECT 1 -->
 
             <div class="project">
 
                 <h3>Internal Audit Job Simulation</h3>
 
-                <p class="project-subtitle">
-                    Goldman Sachs | Forage
+                <p class="project-source">
+                    Forage
                 </p>
 
                 <p>
-                    Completed practical tasks focused on the foundations of
-                    internal audit and risk assessment within Global Banking
-                    & Markets, developing experience in evaluating business
-                    risks and applying internal audit concepts.
+                    Completed practical tasks in the foundations of internal audit
+                    and risk assessment in Global Banking & Markets, developing
+                    experience applying internal audit and risk assessment concepts.
                 </p>
 
             </div>
 
 
-            <!-- Project 2 -->
+            <!-- PROJECT 2 -->
 
             <div class="project">
 
                 <h3>Stock Market & Technical Analysis</h3>
 
-                <p class="project-subtitle">
+                <p class="project-source">
                     Just Money Care
                 </p>
 
                 <p>
-                    Completed a three-month stock market course focused on
-                    analyzing stocks and market behavior. Applied concepts
-                    including candlestick patterns, uptrends and downtrends,
-                    and economic indicators such as the Consumer Price Index
-                    (CPI) to interpret market conditions.
+                    Completed a three-month stock market course involving stock
+                    analysis and market interpretation. Analyzed candlestick
+                    patterns, identified uptrends and downtrends, and studied
+                    economic indicators such as the Consumer Price Index (CPI).
                 </p>
 
             </div>
 
 
-            <!-- Project 3 -->
+            <!-- PROJECT 3 -->
 
             <div class="project">
 
                 <h3>Database & SQL Analysis</h3>
 
-                <p class="project-subtitle">
+                <p class="project-source">
                     Rutgers Business School
                 </p>
 
                 <p>
                     Applied relational database concepts and SQL queries to
-                    retrieve, organize, and analyze business data using
-                    MySQL and the Sakila sample database.
+                    retrieve, organize, and analyze business data using MySQL
+                    and the Sakila sample database.
                 </p>
 
             </div>
-
 
         </div>
 
     </section>
 
 
-    <!-- Certifications -->
+    <!-- CERTIFICATIONS -->
 
     <section id="certifications">
 
@@ -336,60 +358,60 @@
 
         <div class="certifications">
 
-
-            <!-- Certificate 1 -->
+            <!-- CERTIFICATION 1 -->
 
             <div class="certificate">
 
                 <h3>Introduction to Corporate Finance</h3>
 
                 <p>
-                    <strong>University of Pennsylvania – Wharton | Coursera</strong>
+                    <strong>
+                        University of Pennsylvania – Wharton | Coursera
+                    </strong>
                 </p>
 
                 <p>
-                    Completed foundational coursework in corporate finance
-                    covering time value of money, discounted cash flow,
-                    capital budgeting, risk and return, and valuation.
-                    Applied concepts including NPV, IRR, and CAPM to
-                    financial decision-making and investment analysis.
+                    Completed coursework covering time value of money,
+                    discounted cash flow, cost of capital, risk and return,
+                    and financial decision-making, including concepts such
+                    as NPV, IRR, and CAPM.
                 </p>
 
             </div>
 
 
-            <!-- Certificate 2 -->
+            <!-- CERTIFICATION 2 -->
 
             <div class="certificate">
 
                 <h3>Introduction to Financial Accounting</h3>
 
                 <p>
-                    <strong>University of Pennsylvania – Wharton | Coursera</strong>
+                    <strong>
+                        University of Pennsylvania | Coursera
+                    </strong>
                 </p>
 
                 <p>
                     Completed coursework covering financial statements,
                     cash flows, transaction recording, and ratio analysis,
-                    with applications to evaluating business performance.
+                    with applications to analyzing business performance.
                 </p>
 
             </div>
-
 
         </div>
 
     </section>
 
 
-    <!-- Footer -->
+    <!-- FOOTER -->
 
     <footer>
 
         <p>© 2026 Diya Mania | Rutgers Business School</p>
 
     </footer>
-
 
 </body>
 
